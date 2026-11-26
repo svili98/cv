@@ -1,10 +1,50 @@
 <!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Nikola Andrejević – CV</title>
-    </head>
-    <body>
-        <iframe src="CV - Nikola Andrejevic.pdf" style="width: 100%; height: 100vh; border: none"></iframe>
-    </body>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nikola Andrejević – CV</title>
+<meta name="description" content="Nikola Andrejević – Software Development Engineer (.NET, Azure, Networking)." />
+<meta property="og:title" content="Nikola Andrejević – CV" />
+<meta property="og:description" content="Software Development Engineer · .NET · Azure · Networking" />
+<meta property="og:image" content="cv-page-1.jpg" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Segoe UI", Arial, sans-serif; background: #e7e7ec; color: #25253d; }
+  header {
+    position: sticky; top: 0; z-index: 1; background: #25253d; color: #fff;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    padding: 12px 16px;
+  }
+  header h1 { font-size: 16px; font-weight: 600; letter-spacing: .02em; }
+  header nav { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+  header a { color: #fff; text-decoration: none; font-size: 13px; padding: 8px 12px; border-radius: 6px; }
+  header a:hover { background: rgba(255,255,255,.12); }
+  header a.pdf { background: #ffcc00; color: #25253d; font-weight: 700; }
+  main { max-width: 900px; margin: 0 auto; padding: 24px 16px 48px; display: grid; gap: 24px; }
+  main img { width: 100%; height: auto; display: block; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,.15); }
+  @media (max-width: 600px) {
+    header { flex-direction: column; align-items: stretch; }
+    header nav { justify-content: stretch; }
+    header nav a { flex: 1; text-align: center; }
+    main { padding: 12px 0 32px; gap: 12px; }
+    main img { box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Nikola Andrejević – CV</h1>
+  <nav>
+    <a href="https://www.linkedin.com/in/nikola-andrejevic">LinkedIn</a>
+    <a href="https://github.com/svili98">GitHub</a>
+    <a href="mailto:98andrejevic@gmail.com">Email</a>
+    <a class="pdf" href="CV%20-%20Nikola%20Andrejevic.pdf" download>Download PDF</a>
+  </nav>
+</header>
+<main>
+  <img src="cv-page-1.jpg" width="1500" height="2103" alt="Nikola Andrejević CV, page 1: profile, education and experience at Akvelon (Microsoft Azure)" />
+  <img src="cv-page-2.jpg" width="1500" height="2103" alt="Nikola Andrejević CV, page 2: certifications, languages, experience at Gemini Software and skills" loading="lazy" />
+</main>
+</body>
 </html>
